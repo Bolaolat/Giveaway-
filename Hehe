@@ -40,71 +40,66 @@ CURRENTLY RUNNING ON BETA VERSION!!
    * SOFTWARE.
 **/
 
-
-
-
-
-
-
-const {
-    smd,
-    prefix, 
-    Config ,
-    sleep
-     } = require('../lib')
-
-
-
-
-
-
+const { smd, prefix, Config, sleep } = require('../lib')
 
 smd({
-    cmdname: "hack",    
+    cmdname: "myhack",    
     type: "fun",    
     info: "hacking prank",    
     filename: __filename,
-
-},
-
+}, 
 async(citel) => {    
-await citel.send("*Injecting Malware😈*")   
-await sleep(2000)    
-await citel.send(" █ 10%")    
-await sleep(1000)    
-await citel.send(" █ █ 20%")    
-await sleep(1000)    
-await citel.send(" █ █ █ 30%")    
-await sleep(1000)    
-await citel.send(" █ █ █ █ 40%")    
-await sleep(1000)    
-await citel.send(" █ █ █ █ █ 50%")    
-await sleep(1000)    
-await citel.send(" █ █ █ █ █ █ 60%")    
-await sleep(1000)    
-await citel.send(" █ █ █ █ █ █ █ 70%")    
-await sleep(1000)    
-await citel.send(" █ █ █ █ █ █ █ █ 80%")    
-await sleep(1000)    
-await citel.send(" █ █ █ █ █ █ █ █ █ 90%")    
-await sleep(1000)    
-await citel.send(" █ █ █ █ █ █ █ █ █ █ 100%")    
-await sleep(1000)    
-await citel.send("System hyjacking on process.. \n Conecting to Server error to find 404 ")    
-await sleep(1000)    
-await citel.send("Device successfully connected... \n Riciving data...")    
-await sleep(1000)    
-await citel.send("Data hyjacked from divice 100% completed \n killing all evidence killing all malwares...")
-await sleep(1000)    
-await citel.send(" HACKING COMPLETED ")    
-await sleep(2000)    
-await citel.send(" SENDING LOG DOCUMENTS...")    
-await sleep(1000)
-await citel.send(" SUCCESSFULLY SENT DATA AND Connection disconnected")    
-await sleep(1000)
+    // Initial message
+    let hackingMessage = await citel.send("*Injecting Malware😈*");
+    
+    await sleep(2000);
+    await citel.edit(hackingMessage, "█ 10%");
+    
+    await sleep(1000);
+    await citel.edit(hackingMessage, "█ █ 20%");
+    
+    await sleep(1000);
+    await citel.edit(hackingMessage, "█ █ █ 30%");
+    
+    await sleep(1000);
+    await citel.edit(hackingMessage, "█ █ █ █ 40%");
+    
+    await sleep(1000);
+    await citel.edit(hackingMessage, "█ █ █ █ █ 50%");
+    
+    await sleep(1000);
+    await citel.edit(hackingMessage, "█ █ █ █ █ █ 60%");
+    
+    await sleep(1000);
+    await citel.edit(hackingMessage, "█ █ █ █ █ █ █ 70%");
+    
+    await sleep(1000);
+    await citel.edit(hackingMessage, "█ █ █ █ █ █ █ █ 80%");
+    
+    await sleep(1000);
+    await citel.edit(hackingMessage, "█ █ █ █ █ █ █ █ █ 90%");
+    
+    await sleep(1000);
+    await citel.edit(hackingMessage, "█ █ █ █ █ █ █ █ █ █ 100%");
+    
+    await sleep(1000);
+    await citel.edit(hackingMessage, "System hyjacking on process...\nConnecting to Server... error 404");
 
-    return await citel.send('BACKLOGS CLEARED');
+    await sleep(1000);
+    await citel.edit(hackingMessage, "Device successfully connected...\nReceiving data...");
 
-}
+    await sleep(1000);
+    await citel.edit(hackingMessage, "Data hijacked from device 100% completed\nClearing all evidence and killing all malware...");
 
-)
+    await sleep(2000);
+    await citel.edit(hackingMessage, "HACKING COMPLETED");
+
+    await sleep(2000);
+    await citel.edit(hackingMessage, "SENDING LOG DOCUMENTS...");
+
+    await sleep(1000);
+    await citel.edit(hackingMessage, "SUCCESSFULLY SENT DATA AND Connection disconnected.");
+
+    await sleep(1000);
+    return await citel.edit(hackingMessage, 'BACKLOGS CLEARED');
+});
