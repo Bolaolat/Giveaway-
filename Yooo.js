@@ -13,7 +13,12 @@ smd({
 },
 
 async(citel) => {    
-    await citel.send("*`Payment Details`*\n\n🔢 *Account Number: 7041039367*")    
+    await citel.send("*`Payment Details`*
+
+🔢 *Account Number: 7041039367*
+🏦 *Bank: PalmPay*
+
+```Feel free to reach out if you need further assistance!```")    
     await sleep(1000);
 }
 )
