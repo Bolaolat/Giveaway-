@@ -6,7 +6,7 @@ const {
 } = require('../lib')
 
 smd({
-    cmdname: "payment",    
+    cmdname: "accz",    
     type: "payment",    
     info: "payment",    
     filename: __filename,
